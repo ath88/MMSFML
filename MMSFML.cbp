@@ -13,12 +13,13 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="/usr/local/include/SFML" />
 				</Compiler>
 				<Linker>
 					<Add option="-pthread" />
-					<Add library="sfml-graphics-s-d" />
-					<Add library="sfml-window-s-d" />
-					<Add library="sfml-system-s-d" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
 					<Add library="dl" />
 					<Add library="freetype" />
 					<Add library="GL" />
@@ -27,6 +28,7 @@
 					<Add library="GLEW" />
 					<Add library="jpeg" />
 					<Add library="Xrandr" />
+					<Add directory="/usr/local/lib" />
 				</Linker>
 			</Target>
 			<Target title="Linux Release">
@@ -36,12 +38,13 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="/usr/local/include/SFML" />
 				</Compiler>
 				<Linker>
 					<Add option="-pthread" />
-					<Add library="sfml-graphics-s" />
-					<Add library="sfml-window-s" />
-					<Add library="sfml-system-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
 					<Add library="dl" />
 					<Add library="freetype" />
 					<Add library="GL" />
@@ -50,6 +53,7 @@
 					<Add library="GLEW" />
 					<Add library="jpeg" />
 					<Add library="Xrandr" />
+					<Add directory="/usr/local/lib" />
 				</Linker>
 			</Target>
 			<Target title="Windows Debug">
