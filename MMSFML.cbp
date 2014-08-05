@@ -13,7 +13,6 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-pthread" />
@@ -37,7 +36,6 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-pthread" />
@@ -62,12 +60,11 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="C:/Program Files (x86)/SFML/include" />
-					<Add directory="include" />
 				</Compiler>
 				<Linker>
-					<Add library="sfml-graphics-s-d" />
-					<Add library="sfml-window-s-d" />
-					<Add library="sfml-system-s-d" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
 					<Add directory="C:/Program Files (x86)/SFML/lib" />
 				</Linker>
 			</Target>
@@ -79,14 +76,12 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="C:/Program Files (x86)/SFML/include" />
-					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="sfml-graphics-s" />
-					<Add library="sfml-window-s" />
-					<Add library="sfml-system-s" />
-					<Add directory="C:/Users/ath88/Desktop/box2d/v2.3.1/Box2D/Build/codeblocks/bin/Debug" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
 					<Add directory="C:/Program Files (x86)/SFML/lib" />
 				</Linker>
 			</Target>
@@ -94,7 +89,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add option="-DSFML_STATIC" />
+			<Add directory="include" />
 		</Compiler>
 		<Linker>
 			<Add directory="/usr/local/lib" />
