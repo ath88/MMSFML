@@ -27,7 +27,7 @@ int main() {
     }
     printf("\n");
 
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Project X");
+    sf::RenderWindow window(sf::VideoMode(800, 600), "MMSFML");
     sf::CircleShape circles[available_mice];
 
     for(int i = 0; i < available_mice; i++) {
