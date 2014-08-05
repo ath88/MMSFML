@@ -16,18 +16,10 @@
 					<Add directory="/usr/local/include/SFML" />
 				</Compiler>
 				<Linker>
-					<Add option="-pthread" />
 					<Add library="sfml-graphics-d" />
 					<Add library="sfml-window-d" />
 					<Add library="sfml-system-d" />
 					<Add library="dl" />
-					<Add library="freetype" />
-					<Add library="GL" />
-					<Add library="X11" />
-					<Add library="glut" />
-					<Add library="GLEW" />
-					<Add library="jpeg" />
-					<Add library="Xrandr" />
 					<Add directory="/usr/local/lib" />
 				</Linker>
 			</Target>
@@ -41,18 +33,10 @@
 					<Add directory="/usr/local/include/SFML" />
 				</Compiler>
 				<Linker>
-					<Add option="-pthread" />
 					<Add library="sfml-graphics" />
 					<Add library="sfml-window" />
 					<Add library="sfml-system" />
 					<Add library="dl" />
-					<Add library="freetype" />
-					<Add library="GL" />
-					<Add library="X11" />
-					<Add library="glut" />
-					<Add library="GLEW" />
-					<Add library="jpeg" />
-					<Add library="Xrandr" />
 					<Add directory="/usr/local/lib" />
 				</Linker>
 			</Target>
