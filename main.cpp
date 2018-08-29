@@ -28,7 +28,7 @@ int main() {
     printf("\n");
 
     sf::RenderWindow window(sf::VideoMode(800, 600), "MMSFML");
-    sf::CircleShape circles[available_mice];
+    vector<sf::CircleShape> circles;
 
     for(int i = 0; i < available_mice; i++) {
         sf::CircleShape circle;
@@ -36,7 +36,7 @@ int main() {
         circle.setFillColor(sf::Color::Red);
         circle.setOrigin(10, 10);
         circle.setPosition(400, 300);
-        circles[i] = circle;
+        circles.push_back(circle);
     }
 
     while (window.isOpen()) {
